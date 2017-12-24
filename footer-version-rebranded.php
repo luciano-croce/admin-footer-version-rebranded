@@ -1,7 +1,7 @@
 <?php 
 /*
 Plugin Name:       Footer Version Rebranded
-Plugin URI:        https://wordpress.org/plugins/footer-version-rebranded/
+Plugin URI:        https://github.com/luciano-croce/footer-version-rebranded/
 Description:       Show rebranded version in admin footer (dashboard backend) when is activated, or automatically, if it is in mu-plugins directory.
 Version:           1.0.1
 Requires at least: 3.0
@@ -17,8 +17,6 @@ Network:           true
 GitHub Plugin URI: https://github.com/luciano-croce/footer-version-rebranded/
 GitHub Branch:     master
 Requires WP:       3.0
- *
- * Plugin approved in the repository of the plugin directory on 2017-12-25
  *
  * Copyright 2013-2017 Luciano Croce (email: luciano.croce@gmail.com)
  *
@@ -47,8 +45,8 @@ Requires WP:       3.0
 	 * PHPDocumentor
 	 *
 	 * @package    WordPress\Plugin
-	 * @subpackage Dashboard\Footer_Version_Rebranded
-	 * @link       https://wordpress.org/plugins/footer-version-rebranded/ - Plugin hosted on wordpress.org repository
+	 * @subpackage Footer\Footer_Version_Rebranded
+	 * @link       https://github.com/luciano-croce/footer-version-rebranded/
 	 * @version    1.0.1 (Build 2017-12-25) Stable
 	 * @since      1.0.0 (Build 2013-12-12) 1st Release
 	 * @author     Luciano Croce <luciano.croce@gmail.com>
