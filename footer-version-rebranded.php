@@ -85,9 +85,7 @@ if ( ! function_exists( 'add_action' ) ) {
 add_filter( 'update_footer', 'core_update_footer_rebranded', 11 ); # By default core update_footer has level 10
 
 /**
- * This plugin expand, secure, and enhance, core version code, available on /wp-admin/includes/update.php
- *
- * Candidate for [features are being developed plugins first](https://make.wordpress.org/core/features-as-plugins/)?
+ * Expand, secure, enhance, core code, on /wp-admin/includes/update.php
  *
  * @author  Luciano Croce <luciano.croce@gmail.com>
  * @version 1.0.1 (Build 2017-12-25)
