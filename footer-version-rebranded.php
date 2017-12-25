@@ -1,7 +1,7 @@
 <?php 
 /*
-Plugin Name:       Footer Version Rebranded
-Plugin URI:        https://github.com/luciano-croce/footer-version-rebranded/
+Plugin Name:       Admin Footer Version (rebranded)
+Plugin URI:        https://github.com/luciano-croce/admin-footer-version/
 Description:       Show rebranded version in admin footer (dashboard backend) when is activated, or automatically, if it is in mu-plugins directory.
 Version:           1.0.1
 Requires at least: 3.0
@@ -11,10 +11,10 @@ Author:            Luciano Croce
 Author URI:        https://github.com/luciano-croce/
 License:           GPLv2 or later (license.txt)
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
-Text Domain:       footer-version-rebranded
+Text Domain:       admin-footer-version
 Domain Path:       /languages
 Network:           true
-GitHub Plugin URI: https://github.com/luciano-croce/footer-version-rebranded/
+GitHub Plugin URI: https://github.com/luciano-croce/admin-footer-version/
 GitHub Branch:     master
 Requires WP:       3.0
  *
@@ -30,7 +30,7 @@ Requires WP:       3.0
  * This program is written with the intent of being helpful,
  * but you are responsible for its use or actions on your own website.
  *
- * Tips - A neat trick, is to put this single file footer-version-rebranded.php (not its parent directory)
+ * Tips - A neat trick, is to put this single file admin-footer-version.php (not its parent directory)
  * in the /wp-content/mu-plugins/ directory (create it if not exists) so you won't even have to enable it,
  * and will be loaded by default, also, since first step installation of WordPress setup!
  *
@@ -38,15 +38,15 @@ Requires WP:       3.0
  */
 
 	/**
-	 * Footer Version Rebranded
+	 * Admin Footer Version (rebranded)
 	 *
 	 * Show rebranded version in admin footer (dashboard backend)
 	 *
 	 * PHPDocumentor
 	 *
 	 * @package    WordPress\Plugin
-	 * @subpackage Footer\Footer_Version_Rebranded
-	 * @link       https://github.com/luciano-croce/footer-version-rebranded/
+	 * @subpackage Footer\Admin_Footer_Version
+	 * @link       https://github.com/luciano-croce/admin-footer-version/
 	 * @version    1.0.1 (Build 2017-12-25) Stable
 	 * @since      1.0.0 (Build 2013-12-12) 1st Release
 	 * @author     Luciano Croce <luciano.croce@gmail.com>
@@ -97,8 +97,8 @@ add_filter( 'update_footer', 'core_update_footer_rebranded', 11 ); # By default 
 function core_update_footer_rebranded( $msg = '' ) {
 
 	if ( ! current_user_can( 'update_core' ) ) {
-//		return sprintf( __( 'You are using a', 'footer-version-rebranded' ) . ' ' . __( 'Version %s', 'footer-version-rebranded' ), get_bloginfo( 'version', 'display' ) ); # Original core code on /wp-admin/includes/update.php
-		return sprintf( __( 'You do <u>not have access</u> to this information <strong>for security purpose</strong>.', 'footer-version-rebranded' ), get_bloginfo( 'version', 'display' ) ); # Sorry, only users can update core have access to this information.
+//		return sprintf( __( 'Version %s' ), get_bloginfo( 'version', 'display' ) ); # Original core code on /wp-admin/includes/update.php
+		return sprintf( __( 'You do <u>not have access</u> to this information <strong>for security purpose</strong>.', 'admin-footer-version' ), get_bloginfo( 'version', 'display' ) ); # Sorry, only users can update core have access to this information.
 	}
 
 	$cur = get_preferred_from_update_core();
@@ -122,16 +122,16 @@ function core_update_footer_rebranded( $msg = '' ) {
 		case 'development':
 			/* Translators - 1: WordPress version number 2: WordPress updates admin screen URL */
 //			return sprintf( __( 'You are using a development version (%1$s). Cool! Please <a href="%2$s">stay updated</a>.' ), get_bloginfo( 'version', 'display' ), network_admin_url( 'update-core.php' ) ); # Original core code on /wp-admin/includes/update.php
-			return sprintf( __( 'You are using a <u>Development Version</u> %1$s', 'footer-version-rebranded' ) . ' - ' . __( '<strong><a href="%2$s">Stay Updated</a></strong>', 'footer-version-rebranded' ), get_bloginfo( 'version', 'display' ), network_admin_url( 'update-core.php' ) );
+			return sprintf( __( 'You are using a <u>Development Version</u> %1$s', 'admin-footer-version' ) . ' - ' . __( '<strong><a href="%2$s">Stay Updated</a></strong>', 'admin-footer-version' ), get_bloginfo( 'version', 'display' ), network_admin_url( 'update-core.php' ) );
 
 		case 'upgrade':
 //			return '<strong><a href="' . network_admin_url( 'update-core.php' ) . '">' . sprintf( __( 'Get Version %s' ), $cur->current ) . '</a></strong>'; # Original core code on /wp-admin/includes/update.php
-			return sprintf( __( 'You are using a <u>not up to date</u> Version %1$s', 'footer-version-rebranded' ), get_bloginfo( 'version', 'display' ), network_admin_url( 'update-core.php' ) ) . ' - ' . '<strong><a href="' . network_admin_url( 'update-core.php' ) . '">' . sprintf( __( 'Get Version %s', 'footer-version-rebranded' ), $cur->current ) . '</a></strong>';
+			return sprintf( __( 'You are using a <u>not up to date</u> Version %1$s', 'admin-footer-version' ), get_bloginfo( 'version', 'display' ), network_admin_url( 'update-core.php' ) ) . ' - ' . '<strong><a href="' . network_admin_url( 'update-core.php' ) . '">' . sprintf( __( 'Get Version %s', 'admin-footer-version' ), $cur->current ) . '</a></strong>';
 
 		case 'latest':
 		default:
 //			return sprintf( __( 'Version %s' ), get_bloginfo( 'version', 'display' ) ); # Original core code on /wp-admin/includes/update.php
-			return sprintf( __( 'You are using a <u>latest available</u>', 'footer-version-rebranded' ) . ' ' . __( 'Version %s', 'footer-version-rebranded' ), get_bloginfo( 'version', 'display' ) );
+			return sprintf( __( 'You are using a <u>latest available</u>', 'admin-footer-version' ) . ' ' . __( 'Version %s', 'admin-footer-version' ), get_bloginfo( 'version', 'display' ) );
 	}
 
 }
