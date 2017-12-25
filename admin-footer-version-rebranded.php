@@ -1,7 +1,7 @@
 <?php 
 /*
 Plugin Name:       Admin Footer Version (rebranded)
-Plugin URI:        https://wordpress.org/plugins/admin-footer-version-rebranded/
+Plugin URI:        https://github.com/luciano-croce/admin-footer-version-rebranded/
 Description:       Show rebranded version in admin footer (dashboard backend) when is activated, or automatically, if it is in mu-plugins directory.
 Version:           1.0.1
 Requires at least: 3.0
