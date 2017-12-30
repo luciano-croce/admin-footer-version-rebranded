@@ -20,8 +20,6 @@ env:
   - WP_VERSION=nightly WP_MULTISITE=1
   - WP_VERSION=trunk WP_MULTISITE=0
   - WP_VERSION=trunk WP_MULTISITE=1
-  - WP_VERSION=upgrade WP_MULTISITE=0
-  - WP_VERSION=upgrade WP_MULTISITE=1
 
 php:
   - nightly
