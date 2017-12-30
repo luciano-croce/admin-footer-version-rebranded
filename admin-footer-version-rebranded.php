@@ -22,15 +22,25 @@ Requires WP:       2.7
  *
  * Copyright 2013-2017 Luciano Croce (email: luciano.croce@gmail.com)
  *
+ * According to the terms of the GNU General Public License, part of Copyright belongs to its own author,
+ * and part belongs to other respective their authors, if exist.
+ *
  * This program is free software; you can redistribute it and/or modify it under the terms of the GNU
  * General Public License version 2, as published by the Free Software Foundation. You may NOT assume
- * that you can use any other version of the GPL.
+ * that you can use any other compatible version of the GPL, or version compatible with GPL.
  *
  * This program is distributed in the hope that it will be useful, on an "AS IS", but WITHOUT ANY WARRANTY;
  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
  * This program is written with the intent of being helpful,
  * but you are responsible for its use or actions on your own website.
+ *
+ * According to the terms of the Detailed Plugin Guidelines (wordpress.org) in particular:
+ * - This developer(s) are responsible(s) for the contents and actions of this plugin.
+ * - Stable version of this plugin is only available from the WordPress Plugin Directory page.
+ * - Plugin version numbers is be incremented for each new release.
+ * - Complete plugin was be available on GitHub before the time of submission.
+ * - This plugin respect trademarks, copyrights, and project names.
  *
  * Tips - A neat trick, is to put this single file admin-footer-version-rebranded.php (not its parent directory)
  * in the /wp-content/mu-plugins/ directory (create it if not exists) so you won't even have to enable it,
@@ -54,7 +64,7 @@ Requires WP:       2.7
 	 * @author     Luciano Croce <luciano.croce@gmail.com>
 	 * @copyright  2013-2017 - Luciano Croce
 	 * @license    https://www.gnu.org/licenses/gpl-2.0.html - GPLv2 or later
-	 * @todo       Preemptive support for WordPress 5.0-alpha
+	 * @todo       Preemptive support for WordPress 5.0-alpha - Adds compatibility with WP 2.1+ to 2.6+
 	 */
 
 /**
@@ -364,15 +374,17 @@ else {
 
 		if ( version_compare( $version, '3.0', '<' ) ) {
 			if ( ! current_user_can( 'administrator' ) ) {
-//				return sprintf( __( 'Version %s' ), get_bloginfo( 'version', 'display' ) ); # Original core code on /wp-admin/includes/update.php
-				return sprintf( __( 'You do <span title="This information has been disabled by the WordPress Administrator for security reasons."><font style="cursor:help"><u>not have access</u></font></span> to this information <strong>for security purpose</strong></span>.', 'admin-footer-version-rebranded' ), get_bloginfo( 'version', 'display' ) ); # Sorry, only users can update core have access to this information.
+//				case 'security':
+//					return sprintf( __( 'Version %s' ), get_bloginfo( 'version', 'display' ) ); # Original core code on /wp-admin/includes/update.php
+					return sprintf( __( 'You do <span title="This information has been disabled by the WordPress Administrator for security reasons."><font style="cursor:help"><u>not have access</u></font></span> to this information <strong>for security purpose</strong></span>.', 'admin-footer-version-rebranded' ), get_bloginfo( 'version', 'display' ) ); # Sorry, only users can update core have access to this information.
 			}
 		}
 
 		if ( version_compare( $version, '3.0', '>=' ) ) {
 			if ( ! current_user_can( 'update_core' ) ) {
-//				return sprintf( __( 'Version %s' ), get_bloginfo( 'version', 'display' ) ); # Original core code on /wp-admin/includes/update.php
-				return sprintf( __( 'You do <span title="This information has been disabled by the WordPress Administrator for security reasons."><font style="cursor:help"><u>not have access</u></font></span> to this information <strong>for security purpose</strong></span>.', 'admin-footer-version-rebranded' ), get_bloginfo( 'version', 'display' ) ); # Sorry, only users can update core have access to this information.
+//				case 'security':
+//					return sprintf( __( 'Version %s' ), get_bloginfo( 'version', 'display' ) ); # Original core code on /wp-admin/includes/update.php
+					return sprintf( __( 'You do <span title="This information has been disabled by the WordPress Administrator for security reasons."><font style="cursor:help"><u>not have access</u></font></span> to this information <strong>for security purpose</strong></span>.', 'admin-footer-version-rebranded' ), get_bloginfo( 'version', 'display' ) ); # Sorry, only users can update core have access to this information.
 			}
 		}
 
