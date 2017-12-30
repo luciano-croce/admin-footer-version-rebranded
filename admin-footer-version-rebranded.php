@@ -147,14 +147,14 @@ if ( version_compare( PHP_VERSION, '5.2.4', '<' ) ) {
 }
 
 /**
- * Make sure that run under WP 3.0+ or greater
+ * Make sure that run under WP 2.7+ or greater
  *
  * @author  Luciano Croce <luciano.croce@gmail.com>
  * @version 1.0.1 (Build 2017-12-25)
  * @since   1.0.0 (Build 2013-12-12)
  */
-if ( version_compare( $version, '2.0', '<' ) ) {
-// wp_die( __( 'This plugin requires WordPress 3.0+ or greater: Activation Stopped! Please note that the Admin Footer Version (rebranded) was introduced since WordPress 3.0+', 'admin-footer-version-rebranded' ) );                 # uncomment it if you prefer die notification
+if ( version_compare( $version, '2.7', '<' ) ) {
+// wp_die( __( 'This plugin requires WordPress 2.7+ or greater: Activation Stopped! Please note that the Admin Footer Version (rebranded) was introduced since WordPress 2.7+', 'admin-footer-version-rebranded' ) );                 # uncomment it if you prefer die notification
 
 	add_action( 'admin_init', 'avcufr_psd_wp_version_init', 0 );
 	add_action( 'admin_notices', 'avcufr_ant_wp_version_init' );
@@ -182,7 +182,7 @@ if ( version_compare( $version, '2.0', '<' ) ) {
 		?>
 		<div class="notice notice-error is-dismissible error">
 		<p>
-		<?php _e( 'This plugin requires WordPress 3.0+ or greater: please note that the Admin Footer Version (rebranded) was introduced since WordPress 3.0+', 'admin-footer-version-rebranded' );?>
+		<?php _e( 'This plugin requires WordPress 2.7+ or greater: please note that the Admin Footer Version (rebranded) was introduced since WordPress 2.7+', 'admin-footer-version-rebranded' );?>
 		</p>
 		</div>
 		<div class="notice notice-warning is-dismissible updated">
