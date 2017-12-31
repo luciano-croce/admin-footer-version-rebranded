@@ -3,7 +3,7 @@
 Plugin Name:       Admin Footer Version (rebranded)
 Plugin URI:        https://github.com/luciano-croce/admin-footer-version-rebranded/
 Description:       Show rebranded version in admin footer (dashboard backend) when is activated, or automatically, if it is in mu-plugins directory.
-Version:           1.0.1
+Version:           1.0.1-dev
 Requires at least: 2.7
 Tested up to:      5.0
 Requires PHP:      5.2.4
@@ -415,12 +415,12 @@ else {
 
 				case 'upgrade':
 //					return '<strong><a href="' . network_admin_url( 'update-core.php' ) . '">' . sprintf( __( 'Get Version %s' ), $cur->current ) . '</a></strong>'; # Original core code on /wp-admin/includes/update.php
-					return sprintf( __( 'You are using a <span title="An updated version %s of WordPress is available"><font style="cursor:help"; color="red"><strong><u>not up to date</u></strong></font></span> Version %1$s', 'admin-footer-version-rebranded' ), $cur->current, get_bloginfo( 'version', 'display' ), admin_url( 'update-core.php' ) ) . ' - ' . '<strong><a href="' . admin_url( 'update-core.php' ) . '">' . sprintf( __( 'Get Version %s', 'admin-footer-version-rebranded' ), $cur->current ) . '</a></strong>';
+					return sprintf( __( 'You are using a <span title="An updated version of WordPress is available"><font style="cursor:help"; color="red"><strong><u>not up to date</u></strong></font></span> Version %1$s', 'admin-footer-version-rebranded' ), get_bloginfo( 'version', 'display' ), admin_url( 'update-core.php' ) ) . ' - ' . '<strong><a href="' . admin_url( 'update-core.php' ) . '">' . sprintf( __( 'Get Version %s', 'admin-footer-version-rebranded' ), $cur->current ) . '</a></strong>';
 
 				case 'latest':
 				default:
 //					return sprintf( __( 'Version %s' ), get_bloginfo( 'version', 'display' ) ); # Original core code on /wp-admin/includes/update.php
-					return sprintf( __( 'You are using a <span title="You have the latest version %1$s of WordPress"><font style="cursor:help"><strong><u>Latest Available</u><strong></font></span>', 'admin-footer-version-rebranded' ) . ' ' . __( 'Version %s', 'admin-footer-version-rebranded' ), get_bloginfo( 'version', 'display' ) );
+					return sprintf( __( 'You are using a <span title="You have the latest version %1$s of WordPress"><font style="cursor:help"><u>Latest Available</u></font></span>', 'admin-footer-version-rebranded' ) . ' ' . __( 'Version %s', 'admin-footer-version-rebranded' ), get_bloginfo( 'version', 'display' ) );
 			}
 		}
 
@@ -433,7 +433,7 @@ else {
 
 				case 'upgrade':
 //					return '<strong><a href="' . network_admin_url( 'update-core.php' ) . '">' . sprintf( __( 'Get Version %s' ), $cur->current ) . '</a></strong>'; # Original core code on /wp-admin/includes/update.php
-					return sprintf( __( 'You are using a <span title="An updated version %s of WordPress is available"><font style="cursor:help"; color="red"><strong><u>not up to date</u></strong></font></span> Version %1$s', 'admin-footer-version-rebranded' ), $cur->current, get_bloginfo( 'version', 'display' ), network_admin_url( 'update-core.php' ) ) . ' - ' . '<strong><a href="' . network_admin_url( 'update-core.php' ) . '">' . sprintf( __( 'Get Version %s', 'admin-footer-version-rebranded' ), $cur->current ) . '</a></strong>';
+					return sprintf( __( 'You are using a <span title="An updated version of WordPress is available"><font style="cursor:help"; color="red"><strong><u>not up to date</u></strong></font></span> Version %1$s', 'admin-footer-version-rebranded' ), get_bloginfo( 'version', 'display' ), network_admin_url( 'update-core.php' ) ) . ' - ' . '<strong><a href="' . network_admin_url( 'update-core.php' ) . '">' . sprintf( __( 'Get Version %s', 'admin-footer-version-rebranded' ), $cur->current ) . '</a></strong>';
 
 				case 'latest':
 				default:
