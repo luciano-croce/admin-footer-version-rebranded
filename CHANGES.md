@@ -8,8 +8,8 @@ Release Date: December 25, 2017
     Renamed text domain slug
     Preemptive Support for WP 5.0-alpha
     Compatible with WordPress 4.9+
-    Work with WordPress 2.7+ to 4.9+ ~ 5.0-alpha
-    Make sure that run under WP 2.7+ or greater
+    Work with WordPress 2.3+ to 4.9+ ~ 5.0-alpha
+    Make sure that run under WP 2.3+ or greater
     Work with PHP 5.2.4 to 7.1+ ~ 7.2+
     Make sure that run under PHP 5.2.4 or greater
     Compatible with MySQL 5.5+ and 5.6+ or greater
@@ -27,11 +27,11 @@ Release Date: December 12, 2013
 
     First initial release of the plugin
     Use the filter hook and not the action hook
-    Compatible with WordPress 2.7+ or greater
+    Compatible with WordPress 2.3+ or greater
     Compatible with WordPress Multisite
     Compatible with mu-plugins directory
     Compatible with 1st step installation setup
     Compatible with the Famous 5 Minute Installation
     Compatible with MySQL 5.0+ or greater
-    Requires WordPress Version 2.7+ or greater
+    Requires WordPress Version 2.3+ or greater
     Requires PHP Version 5.2.4 or greater
