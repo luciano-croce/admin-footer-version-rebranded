@@ -4,7 +4,9 @@
 
 Show rebranded version in admin footer (dashboard backend) when is activated, or automatically, if it is in mu-plugins directory. Expand, secure, enhance, core code, on /wp-admin/includes/update.php
 
-* Expand (necessary)
+ Necessary:
+
+* Expand
 
   * Same dashboard messages for all WordPress releases.
   * All readable text of this plugin are code free.
@@ -12,14 +14,18 @@ Show rebranded version in admin footer (dashboard backend) when is activated, or
   * Centralized deployment and development for installations.
   * Writed with a compatible editor UTF-8 without BOM and Unix LF.
 
-* Enhance (includes)
+ Includes:
+
+* Enhance
 
  * Visual color messages for: development, upgrade, latest.
  * Support for Single, Multiuser (MU) and Multisite (MS) release.
  * Checking PHP and WP requirements before plugin activation.
  * No HTML tags was inserted (showed) on Text Domain strings.
 
-* Secure (provides)
+Provides:
+
+* Secure
 
  * Disables for all users except administrators the ability to visualize version.
  * Fixed missed user role code for core updates.
