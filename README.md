@@ -6,7 +6,7 @@ Show rebranded version in admin footer (dashboard backend) when is activated, or
 
 Necessary:
 
-* Expand
+Expand
 
   * Same dashboard messages for all WordPress releases.
   * All readable text of this plugin are code free.
@@ -16,7 +16,7 @@ Necessary:
 
 Includes:
 
-* Enhance
+Enhance
 
  * Visual color messages for: development, upgrade, latest.
  * Support for Single, Multiuser (MU) and Multisite (MS) release.
@@ -25,7 +25,7 @@ Includes:
 
 Provides:
 
-* Secure
+Secure
 
  * Disables for all users except administrators the ability to visualize version.
  * Fixed missed user role code for core updates.
