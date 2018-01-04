@@ -461,7 +461,7 @@ else {
 				if ( current_user_can( 'update_core' ) ) {
 					/* Translators - 1: WordPress current version number 2: WordPress updates core admin URL 3: WordPress latest version number */
 //					return sprintf( __( 'You are using a development version (%1$s). Cool! Please <a href="%2$s">stay updated</a>.' ), get_bloginfo( 'version', 'display' ), network_admin_url( 'update-core.php' ) ); # Original core code on /wp-admin/includes/update.php
-					return sprintf( __( 'You are using a', 'admin-footer-version-rebranded' ) . ' ' . '<span title="' . __( 'You are using a development version', 'admin-footer-version-rebranded' ) . ' ' . '%s' . ' ' . __( 'of WordPress.', 'admin-footer-version-rebranded' ) . '"><font style="cursor:help"; color="orange"><strong><u>' . __( 'Development Version', 'admin-footer-version-rebranded' ) . '</u></strong></font></span>' . ' ' . '%1$s' . ' - ' . '<strong>' . '<a href="%2$s">' . __( 'Stay Updated', 'admin-footer-version-rebranded' ) . '</a></strong>', get_bloginfo( 'version', 'display' ), network_admin_url( 'update-core.php' ) );
+					return sprintf( __( 'You are using a', 'admin-footer-version-rebranded' ) . ' ' . '<span title="' . __( 'You are using a development version', 'admin-footer-version-rebranded' ) . ' ' . '%s' . ' ' . __( 'of WordPress.', 'admin-footer-version-rebranded' ) . '"><font style="cursor:help"; color="orange"><strong><u>' . __( 'Development Version', 'admin-footer-version-rebranded' ) . '</u></strong></font></span>' . ' ' . '%1$s' . ' - ' . '<strong>' . '<a href="%2$s">' . __( 'Stay Updated', 'admin-footer-version-rebranded' ) . '.' . '</a></strong>', get_bloginfo( 'version', 'display' ), network_admin_url( 'update-core.php' ) );
 				}
 
 				case 'upgrade':
@@ -473,7 +473,7 @@ else {
 				case 'latest':
 				default:
 //					return sprintf( __( 'Version %s' ), get_bloginfo( 'version', 'display' ) ); # Original core code on /wp-admin/includes/update.php
-					return sprintf( __( 'You are using a', 'admin-footer-version-rebranded' ) . ' ' . '<span title="' . __( 'You have the latest version', 'admin-footer-version-rebranded' ) . ' ' . '%1$s' . ' ' . __( 'of WordPress.', 'admin-footer-version-rebranded' ) . '"><font style="cursor:help"; color="black"><strong><u>' . __( 'Latest Available', 'admin-footer-version-rebranded' ) . '</u></strong></font></span>' . ' ' . __( 'Version', 'admin-footer-version-rebranded' ) . ' ' . '%s', get_bloginfo( 'version', 'display' ) );
+					return sprintf( __( 'You are using the', 'admin-footer-version-rebranded' ) . ' ' . '<span title="' . __( 'You have the latest version', 'admin-footer-version-rebranded' ) . ' ' . '%1$s' . ' ' . __( 'of WordPress.', 'admin-footer-version-rebranded' ) . '"><font style="cursor:help"; color="black"><strong><u>' . __( 'Latest Available', 'admin-footer-version-rebranded' ) . '</u></strong></font></span>' . ' ' . __( 'Version', 'admin-footer-version-rebranded' ) . ' ' . '%s', get_bloginfo( 'version', 'display' ) );
 			}
 		}
 
@@ -484,7 +484,7 @@ else {
 					if ( current_user_can( 'manage_options' ) ) {
 						/* Translators - 1: WordPress current version number 2: WordPress updates core admin URL 3: WordPress latest version number */
 //						return sprintf( __( 'You are using a development version (%1$s). Cool! Please <a href="%2$s">stay updated</a>.' ), get_bloginfo( 'version', 'display' ), network_admin_url( 'update-core.php' ) ); # Original core code on /wp-admin/includes/update.php
-						return sprintf( __( 'You are using a', 'admin-footer-version-rebranded' ) . ' ' . '<span title="' . __( 'You are using a development version', 'admin-footer-version-rebranded' ) . ' ' . '%s' . ' ' . __( 'of WordPress.', 'admin-footer-version-rebranded' ) . '"><font style="cursor:help"; color="orange"><u>' . __( 'Development Version', 'admin-footer-version-rebranded' ) . '</u></font></span>' . ' ' . '%1$s' . ' - ' . '<strong>' . '<a href="%2$s">' . __( 'Stay Updated', 'admin-footer-version-rebranded' ) . '</a></strong>', get_bloginfo( 'version', 'display' ), admin_url( 'update-core.php' ) );
+						return sprintf( __( 'You are using a', 'admin-footer-version-rebranded' ) . ' ' . '<span title="' . __( 'You are using a development version', 'admin-footer-version-rebranded' ) . ' ' . '%s' . ' ' . __( 'of WordPress.', 'admin-footer-version-rebranded' ) . '"><font style="cursor:help"; color="orange"><u>' . __( 'Development Version', 'admin-footer-version-rebranded' ) . '</u></font></span>' . ' ' . '%1$s' . ' - ' . '<strong>' . '<a href="%2$s">' . __( 'Stay Updated', 'admin-footer-version-rebranded' ) . '.' . '</a></strong>', get_bloginfo( 'version', 'display' ), admin_url( 'update-core.php' ) );
 					}
 
 					case 'upgrade':
@@ -496,7 +496,7 @@ else {
 					case 'latest':
 					default:
 //						return sprintf( __( 'Version %s' ), get_bloginfo( 'version', 'display' ) ); # Original core code on /wp-admin/includes/update.php
-						return sprintf( __( 'You are using a', 'admin-footer-version-rebranded' ) . ' ' . '<span title="' . __( 'You have the latest version', 'admin-footer-version-rebranded' ) . ' ' . '%1$s' . ' ' . __( 'of WordPress.', 'admin-footer-version-rebranded' ) . '"><font style="cursor:help"; color="white"><u>' . __( 'Latest Available', 'admin-footer-version-rebranded' ) . '</u></font></span>' . ' ' . __( 'Version', 'admin-footer-version-rebranded' ) . ' ' . '%s', get_bloginfo( 'version', 'display' ) );
+						return sprintf( __( 'You are using the', 'admin-footer-version-rebranded' ) . ' ' . '<span title="' . __( 'You have the latest version', 'admin-footer-version-rebranded' ) . ' ' . '%1$s' . ' ' . __( 'of WordPress.', 'admin-footer-version-rebranded' ) . '"><font style="cursor:help"; color="white"><u>' . __( 'Latest Available', 'admin-footer-version-rebranded' ) . '</u></font></span>' . ' ' . __( 'Version', 'admin-footer-version-rebranded' ) . ' ' . '%s', get_bloginfo( 'version', 'display' ) );
 				}
 			}
 		}
@@ -534,7 +534,7 @@ else {
 					if ( current_user_can( 'manage_options' ) ) {
 						/* Translators - 1: WordPress current version number 2: WordPress updates core admin URL 3: WordPress latest version number */
 //						return sprintf( '| '.__( 'You are using a development version (%s). Cool! Please <a href="%s">stay updated</a>.' ), $GLOBALS['wp_version'], $cur->url, $cur->current ); # Original core code on /wp-admin/includes/update.php
-						return sprintf( '| ' . __( 'You are using a', 'admin-footer-version-rebranded' ) . '<span title="' . __( 'You are using a development version', 'admin-footer-version-rebranded' ) . ' ' . '%s' . ' ' . __( 'of WordPress.', 'admin-footer-version-rebranded' ) . '"><font style="cursor:help"; color="orange"><strong><u>' . __( 'Development Version', 'admin-footer-version-rebranded' ) . '</u></strong></font></span>' . ' ' . '%1$s' . ' - ' . '<strong>' . '<a href="%2$s">' . __( 'Stay Updated', 'admin-footer-version-rebranded' ) . '</a></strong>', $GLOBALS[ 'wp_version' ], $cur->url, $cur->current );
+						return sprintf( '| ' . __( 'You are using a', 'admin-footer-version-rebranded' ) . '<span title="' . __( 'You are using a development version', 'admin-footer-version-rebranded' ) . ' ' . '%s' . ' ' . __( 'of WordPress.', 'admin-footer-version-rebranded' ) . '"><font style="cursor:help"; color="orange"><strong><u>' . __( 'Development Version', 'admin-footer-version-rebranded' ) . '</u></strong></font></span>' . ' ' . '%1$s' . ' - ' . '<strong>' . '<a href="%2$s">' . __( 'Stay Updated', 'admin-footer-version-rebranded' ) . '.' . '</a></strong>', $GLOBALS[ 'wp_version' ], $cur->url, $cur->current );
 					break;
 					}
 
@@ -548,7 +548,7 @@ else {
 					case 'latest' :
 					default :
 //						return sprintf( '| '.__( 'Version %s' ), $GLOBALS['wp_version'], $cur->url, $cur->current ); # Original core code on /wp-admin/includes/update.php
-						return sprintf( '| ' . __( 'You are using a', 'admin-footer-version-rebranded' ) . ' ' . '<font style="cursor:help"; color="white"><u>' . '<span title="' . __( 'You have the latest version', 'admin-footer-version-rebranded' ) . ' ' . '%1$s' . ' ' . __( 'of WordPress.', 'admin-footer-version-rebranded' ) . '">' . __( 'Latest Available', 'admin-footer-version-rebranded' ) . '</span></u></font>' . ' ' . __( 'Version', 'admin-footer-version-rebranded' ) . ' ' . '%s', $GLOBALS[ 'wp_version' ], $cur->url, $cur->current );
+						return sprintf( '| ' . __( 'You are using the', 'admin-footer-version-rebranded' ) . ' ' . '<font style="cursor:help"; color="white"><u>' . '<span title="' . __( 'You have the latest version', 'admin-footer-version-rebranded' ) . ' ' . '%1$s' . ' ' . __( 'of WordPress.', 'admin-footer-version-rebranded' ) . '">' . __( 'Latest Available', 'admin-footer-version-rebranded' ) . '</span></u></font>' . ' ' . __( 'Version', 'admin-footer-version-rebranded' ) . ' ' . '%s', $GLOBALS[ 'wp_version' ], $cur->url, $cur->current );
 					break;
 				}
 			}
@@ -561,7 +561,7 @@ else {
 					if ( current_user_can( 'manage_options' ) ) {
 						/* Translators - 1: WordPress current version number 2: WordPress updates core admin URL 3: WordPress latest version number */
 //						return sprintf( '| '.__( 'You are using a development version (%s). Cool! Please <a href="%s">stay updated</a>.' ), $GLOBALS['wp_version'], $cur->url, $cur->current ); # Original core code on /wp-admin/includes/update.php
-						return sprintf( '| ' . __( 'You are using a', 'admin-footer-version-rebranded' ) . '<span title="' . __( 'You are using a development version', 'admin-footer-version-rebranded' ) . ' %s ' . __( 'of WordPress.', 'admin-footer-version-rebranded' ) . '"><font style="cursor:help"; color="orange"><strong><u>' . __( 'Development Version', 'admin-footer-version-rebranded' ) . '</u></strong></font></span>' . ' %1$s' . ' - ' . '<strong>' . '<a href="%2$s">' . __( 'Stay Updated', 'admin-footer-version-rebranded' ) . '</a></strong>', $GLOBALS[ 'wp_version' ], $cur->url, $cur->current );
+						return sprintf( '| ' . __( 'You are using a', 'admin-footer-version-rebranded' ) . '<span title="' . __( 'You are using a development version', 'admin-footer-version-rebranded' ) . ' %s ' . __( 'of WordPress.', 'admin-footer-version-rebranded' ) . '"><font style="cursor:help"; color="orange"><strong><u>' . __( 'Development Version', 'admin-footer-version-rebranded' ) . '</u></strong></font></span>' . ' %1$s' . ' - ' . '<strong>' . '<a href="%2$s">' . __( 'Stay Updated', 'admin-footer-version-rebranded' ) . '.' . '</a></strong>', $GLOBALS[ 'wp_version' ], $cur->url, $cur->current );
 					break;
 					}
 
@@ -576,7 +576,7 @@ else {
 					case 'latest' :
 					default :
 //						return sprintf( '| '.__( 'Version %s' ), $GLOBALS['wp_version'], $cur->url, $cur->current ); # Original core code on /wp-admin/includes/update.php
-						return sprintf( '| ' . __( 'You are using a', 'admin-footer-version-rebranded' ) . ' ' . '<font style="cursor:help"; color="black"><strong><u>' . '<span title="' . __( 'You have the latest version', 'admin-footer-version-rebranded' ) . ' %1$s ' . __( 'of WordPress.', 'admin-footer-version-rebranded' ) . '">' . __( 'Latest Available', 'admin-footer-version-rebranded' ) . '</span></u></strong></font>' . ' ' . __( 'Version', 'admin-footer-version-rebranded' ) . ' %s', $GLOBALS[ 'wp_version' ], $cur->url, $cur->current );
+						return sprintf( '| ' . __( 'You are using the', 'admin-footer-version-rebranded' ) . ' ' . '<font style="cursor:help"; color="black"><strong><u>' . '<span title="' . __( 'You have the latest version', 'admin-footer-version-rebranded' ) . ' %1$s ' . __( 'of WordPress.', 'admin-footer-version-rebranded' ) . '">' . __( 'Latest Available', 'admin-footer-version-rebranded' ) . '</span></u></strong></font>' . ' ' . __( 'Version', 'admin-footer-version-rebranded' ) . ' %s', $GLOBALS[ 'wp_version' ], $cur->url, $cur->current );
 					break;
 				}
 			}
