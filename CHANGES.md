@@ -1,3 +1,21 @@
+1.1.1-dev
+
+Release Date: January 06, 2018
+
+    Adds Settings Options Panel on Admin Menu of Dashboard
+    Enable/Disable Footer Text (for users and admins)
+    Enable/Disable Footer Text (only for users)
+    Enable/Disable Footer Text (only for admins)
+    Enable/Disable Footer Update (for users and admins)
+    Enable/Disable Footer Update (only for users)
+    Enable/Disable Footer Update (only for admins)
+    Show default Footer Text (for users and admins)
+    Show default Footer Text (only for users)
+    Show default Footer Text (only for admins)
+    Show default Footer Update (for users and admins)
+    Show default Footer Update (only for users)
+    Show default Footer Update (only for admins)
+
 1.0.1
 
 Release Date: December 25, 2017
