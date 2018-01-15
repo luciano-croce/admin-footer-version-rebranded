@@ -16,6 +16,7 @@ env:
   - WP_VERSION=master WP_MULTISITE=1
 
 php:
+  - nightly
   - 7.2
   - 7.1.12
   - 7.1
@@ -39,9 +40,6 @@ matrix:
   allow_failures:
     - php: nightly
   fast_finish: true
-
-before_install:
-  - phpenv config-rm xdebug.ini
 
 script:
   - find . \( -name '*.php' \) -exec php -lf {} \;
