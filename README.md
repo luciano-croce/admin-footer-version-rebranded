@@ -4,7 +4,7 @@
 
 Show rebranded version in the admin footer, (dashboard) when it is activated, or automatically, if it is in mu-plugins directory. Expand, secure, enhance, core code on /wp-admin/includes/update.php
 
-Available on https://wordpress.org/plugins/admin-footer-version-rebranded/
+Available only on https://wordpress.org/plugins/admin-footer-version-rebranded/
 
 Necessary:
 
