@@ -1,4 +1,4 @@
-Future Release
+Future Release Planning
 
     Adds Settings Options Panel on Admin Menu of Dashboard
     Enable/Disable Footer Text (for users and admins)
