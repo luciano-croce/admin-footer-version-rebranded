@@ -12,7 +12,7 @@ Necessary
 
 * Same dashboard messages for all WordPress releases.
 * All readable text of this plugin are code free.
-* Same code work from WP 2.3+ to 4.9+ ~ 5.0-alpha/beta
+* Same code work from WP 2.3+ to 4.9+ ~ 5.0-alpha
 * Centralized deployments and development for all installations.
 
 Enhance:
@@ -34,8 +34,10 @@ Provides
 * Corrected the missing user role code for development updates.
 * Secured the user roles that can update WordPress.
 * Only users that have manage_options capability (WP 2.3+ to 2.9+)
-* Only users that have update_core capability (WP 3.0+ to 4.9+ ~ 5.0-alpha/beta)
-= Table of classifications =
+* Only users that have update_core capability (WP 3.0+ to 4.9+ ~ 5.0-alpha)
+
+Table of classifications:
+
 WordPress
 
  * Legacy version 2.3+ to 2.6+ - red color highlighted
