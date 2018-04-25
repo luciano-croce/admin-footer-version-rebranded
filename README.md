@@ -77,3 +77,19 @@ MariaDB
  * 10.0+ current version black color highlighted
 
 (available on development version)
+
+Tips:
+
+A neat trick, is to put this single file admin-footer-version-rebranded.php (not its parent directory) in the /wp-content/mu-plugins/ directory (create it if not exists) so you won't even have to enable it, and will be loaded by default, also, since first step installation of WordPress setup!
+
+Also, for translation functionality, put all files of the single languages (admin-footer-version-rebranded-en_US.mo for example) that you need (not its parent directory) in the /wp-content/mu-plugins/ directory (create it if not exists) and will be loaded by default, they also, since first step installation of WordPress setup!
+
+About it:
+
+The code of this plugin, is not written with a PHP framework, but with a simple PHP editor, manually, compatible UTF-8 without BOM, and Unix LF. To avoid code corruption, do not edit it with WordPress embedded editor, or with any specifications incompatible editor.
+
+Translation:
+
+Translated by [Luciano Croce](https://profiles.wordpress.org/luciano-croce/) on 14 languages and related formal/informal variants.
+
+Available in English, French, German, Italian, Portuguese, Spanish, and more other languages coming soon.
