@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/luciano-croce/admin-footer-version-rebranded.svg?branch=master)](https://travis-ci.org/luciano-croce/admin-footer-version-rebranded)
 
+Disclaimer: this is the developmental version, is more different to the original package, and is possible that not work as expected!
+
 Available only on https://wordpress.org/plugins/admin-footer-version-rebranded/
 
 Plugin approved in the repository of the plugin directory on 2017-12-25
