@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/luciano-croce/admin-footer-version-rebranded.svg?branch=master)](https://travis-ci.org/luciano-croce/admin-footer-version-rebranded)
 
-Disclaimer: this is the developmental version, is more different to the original package, and is possible that not work as expected!
+Disclaimer: this is the developmental version, is more different to the original package, and not work as expected!
 
 Available only on https://wordpress.org/plugins/admin-footer-version-rebranded/
 
