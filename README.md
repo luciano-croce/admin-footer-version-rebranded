@@ -90,9 +90,9 @@ MariaDB
 
 Tips
 
-A neat trick, is to put this single file admin-footer-version-rebranded.php (not its parent directory) in the /wp-content/mu-plugins/ directory (create it if not exists) so you won't even have to enable it, and will be loaded by default, also, since first step installation of WordPress setup!
+A neat trick, is to put this single file admin-footer-version-rebranded.php (not it's parent directory) in the /wp-content/mu-plugins/ directory (create it if not exists) so you won't even have to enable it, and will be loaded by default, also, since first step installation of WordPress setup!
 
-Also, for translation functionality, put all files of the single languages (admin-footer-version-rebranded-en_US.mo for example) that you need (not its parent directory) in the /wp-content/mu-plugins/ directory (create it if not exists) and will be loaded by default, they also, since first step installation of WordPress setup!
+Also, for translation functionality, put all files of the single languages (admin-footer-version-rebranded-en_US.mo for example) that you need (not it's parent directory) in the /wp-content/mu-plugins/ directory (create it if not exists) and will be loaded by default, they also, since first step installation of WordPress setup!
 
 About it
 
@@ -159,4 +159,4 @@ People
 
 Disclaimer
 
-With the exception of the main descriptions and text, it is considered a good practice, not to translate the changelog of the readme.txt file in the various languages different from en_US (except for the other english languages derived from english - this is not a rule - everyone is free to translate or not translate according to the indications of their own polyglots community) to standardize the understanding of its technical content, and not introduce new errors due to the misunderstanding of it's correct translation.
+With the exception of the main descriptions and text, it is considered a good practice, not to translate the changelog of the readme.txt file in the various languages different from en_US (except for the other english languages derived from english - this is not a rule - everyone is free to translate or not translate it, also according to the indications of their own polyglots community) to standardize the understanding of it's technical content, and not introduce new errors due to the misunderstanding of it's correct translation.
