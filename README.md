@@ -102,7 +102,7 @@ Translation
 
 Translated by [Luciano Croce](https://profiles.wordpress.org/luciano-croce/) on 14 languages and related formal/informal variants.
 
-Available in English, French, German, Italian, Portuguese, Spanish, and more other languages coming soon.
+Available in American, Australian, Belgian FR, Brazilian, Canadian EN, Canadian FR, Catalan, Chilean, Colombian, English, French, German, Italian, New Zealander, Peruvian, Portuguese, Spanish, Swiss DE, Venezuelan and more other languages in becoming.
 
 Acknowledgements
 
@@ -110,6 +110,7 @@ Thanks for the corrections, suggestions, and translation approval to
 
 Team
 
+ * ca
  * de_CH
  * de_DE
  * en_AU
@@ -117,7 +118,15 @@ Team
  * en_GB
  * en_NZ
  * en_ZA
+ * es_AR
+ * es_CL
+ * es_CO
+ * es_CR
  * es_ES
+ * es_GT
+ * es_MX
+ * es_PE
+ * es_VE
  * fr_BE
  * fr_CA
  * fr_FR
@@ -127,24 +136,27 @@ Team
 
 People
 
- * [Andrea Gandino](https://profiles.wordpress.org/andg/)
- * [Daniel James](https://profiles.wordpress.org/danieltj/)
- * [Fernando Tellado](https://profiles.wordpress.org/fernandot/)
- * [Felipe Elia](https://profiles.wordpress.org/felipeelia/)
- * [FX Bérnard](https://profiles.wordpress.org/fxbenard/)
- * [Garrett Hyder](https://profiles.wordpress.org/garrett-eclipse/)
- * [Gary Jones](https://profiles.wordpress.org/garyj/)
- * [Laura Sacco](https://profiles.wordpress.org/lasacco/)
- * [Pascal Birchler](https://profiles.wordpress.org/swissspidy/)
- * [Pascal Casier](https://profiles.wordpress.org/casiepa/)
- * [Pedro Mendonça](https://profiles.wordpress.org/pedromendonca/)
- * [Petya Raykovska](https://profiles.wordpress.org/petya/)
- * [Presskopp](https://profiles.wordpress.org/presskopp/)
- * [Stephen Edgar](https://profiles.wordpress.org/netweb/)
- * [Johannes Jülg](https://profiles.wordpress.org/timse201/)
- * [WebAware](https://profiles.wordpress.org/webaware/)
- * [Naoko Takano](https://profiles.wordpress.org/nao/)
+ * [Andrea Gandino](https://profiles.wordpress.org/andg) andg
+ * [Braulio Aquino](https://profiles.wordpress.org/braulioaquino) braulioaquino
+ * [Daniel James](https://profiles.wordpress.org/danieltj) danieltj
+ * [Felipe Elia](https://profiles.wordpress.org/felipeelia) felipeelia
+ * [Fernando Tellado](https://profiles.wordpress.org/fernandot) fernandot
+ * [François-Xavier Bénard](https://profiles.wordpress.org/fxbenard) fxbenard
+ * [Garrett Hyder](https://profiles.wordpress.org/garrett-eclipse) garrett-eclipse
+ * [Gary Jones](https://profiles.wordpress.org/garyj) garyj
+ * [Jb Audras](https://profiles.wordpress.org/audrasjb) audrasjb
+ * [Johannes Jülg](https://profiles.wordpress.org/timse201) timse201
+ * [Jordi Cuevas](https://profiles.wordpress.org/jordicuevas) jordicuevas
+ * [Laura Sacco](https://profiles.wordpress.org/lasacco) lasacco
+ * [Naoko Takano](https://profiles.wordpress.org/nao) nao
+ * [Pascal Birchler](https://profiles.wordpress.org/swissspidy) swissspidy
+ * [Pascal Casier](https://profiles.wordpress.org/casiepa) casiepa
+ * [Pedro Mendonça](https://profiles.wordpress.org/pedromendonca) pedromendonca
+ * [Petya Raykovska](https://profiles.wordpress.org/petya) petya
+ * [Presskopp](https://profiles.wordpress.org/presskopp) presskopp
+ * [Ross McKay](https://profiles.wordpress.org/webaware) webaware
+ * [Stephen Edgar](https://profiles.wordpress.org/netweb) netweb
 
 Disclaimer
 
-With the exception of the main descriptions, it is considered a good practice, not to translate the readme.txt file in the various languages different from en_US (except for the other english languages derived from english) to standardize the understanding of its technical content, and not to introduce new errors due to the misunderstanding of its correct translation.
+With the exception of the main descriptions and text, it is considered a good practice, not to translate the changelog of the readme.txt file in the various languages different from en_US (except for the other english languages derived from english - this is not a rule - everyone is free to translate or not translate according to the indications of their own polyglots community) to standardize the understanding of its technical content, and not introduce new errors due to the misunderstanding of it's correct translation.
