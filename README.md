@@ -100,7 +100,7 @@ The code of this plugin, is not written with a PHP framework, but with a simple 
 
 Translation
 
-Translated by [Luciano Croce](https://profiles.wordpress.org/luciano-croce/) on 14 languages and related formal/informal variants.
+Translated by [Luciano Croce](https://profiles.wordpress.org/luciano-croce/) on 23 languages and 4 formal/informal variants.
 
 Available in American, Australian, Belgian FR, Brazilian, Canadian EN, Canadian FR, Catalan, Chilean, Colombian, English, French, German, Italian, New Zealander, Peruvian, Portuguese, Spanish, Swiss DE, Venezuelan and more other languages in becoming.
 
